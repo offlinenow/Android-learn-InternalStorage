@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         try {
             FileInputStream fileInputStream = openFileInput("text.txt");
 
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(fileInputStream, "uft8"), BUFFER_SIZE);
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(fileInputStream, "UTF8"), BUFFER_SIZE);
             Toast.makeText(MainActivity.this, bufferedReader.readLine(), Toast.LENGTH_LONG).show();
         } catch (Exception e) {
             e.printStackTrace();
